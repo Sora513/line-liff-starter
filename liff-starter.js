@@ -30,7 +30,7 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
             type: 'text',
-            text: "{\"Name\":\""+document.forms.form.name.value+"\",\"Gender\":\""+document.forms.form.sex.value+"\",\"stage\":\""+document.forms.form.sex.value+"\"}"
+            text: "{\"Name\":\""+document.forms.form.name.value+"\",\"Gender\":\""+document.forms.form.sex.value+"\",\"stage\":\""+document.forms.form.stage.value+"\"}"
         }, {
             type: 'sticker',
             packageId: '2',
