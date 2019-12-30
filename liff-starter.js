@@ -4,6 +4,8 @@ window.onload = function (e) {
     });
 };
 
+console.log(document.forms.form.name.value);
+
 function initializeApp(data) {
     document.getElementById('languagefield').textContent = data.language;
     document.getElementById('viewtypefield').textContent = data.context.viewType;
@@ -28,7 +30,7 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
             type: 'text',
-            text: document.getElementsByName("name").text
+            text: "{\"Name\":"+document.forms.form.name.value+",\"Gender\":"+document.forms.form.sex.value+",\"stage\":"+document.forms.form.sex.value+"}"
         }, {
             type: 'sticker',
             packageId: '2',
