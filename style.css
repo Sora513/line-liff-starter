@@ -3,6 +3,10 @@ html {
     font-size: 11px;
 }
 
+#openwindowbutton,#getaccesstoken,#getprofilebutton,#liffdata{
+    display: none;
+}
+
 table {
     width: 100%;
     table-layout:fixed;
