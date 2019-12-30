@@ -2,6 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFF Starter</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -14,6 +15,30 @@
             <button id="getaccesstoken">Get Access Token</button>
             <button id="getprofilebutton">Get Profile</button>
             <button id="sendmessagebutton">Send Message</button>
+        </div>
+    </div>
+
+    <p>
+        名前：<input type="text" name="name" size="40">
+    </p>
+    <p>
+        性別：<input type="radio" name="sex" value="male">男
+        <input type="radio" name="sex" value="female">女
+    </p>
+    <p>
+        学年を選択：<select name="stage">
+            <option value="1">1年生</option>
+            <option value="2">2年生</option>
+            <option value="3">3年生</option>
+            <option value="4">4年生</option>
+            <option value="5">5年生</option>
+            <option value="6">6年生</option>
+        </select>
+    </p>
+
+    <div class="buttongroup">
+        <div class="buttonrow">
+            <button id="send">送信</button>
         </div>
     </div>
 
@@ -78,7 +103,7 @@
             </tr>
         </table>
     </div>
-    
+
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script src="liff-starter.js"></script>
 </body>
