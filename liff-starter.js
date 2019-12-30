@@ -31,10 +31,6 @@ function initializeApp(data) {
         liff.sendMessages([{
             type: 'text',
             text: "ユーザーの登録{\"Name\":\""+document.forms.form.name.value+"\",\"Gender\":\""+document.forms.form.sex.value+"\",\"stage\":\""+document.forms.form.stage.value+"\"}"
-        }, {
-            type: 'sticker',
-            packageId: '2',
-            stickerId: '144'
         }]).then(function () {
             window.alert("Message sent");
         }).catch(function (error) {
